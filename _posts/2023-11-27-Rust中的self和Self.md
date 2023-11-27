@@ -141,4 +141,4 @@ struct MyStruct {
     next: Option<Box<Self>>,
 }
 ```  
-在这个例子中，`Self` 被用来表示当前结构体 `Node` 的类型.
+在这个例子中，`Self` 被用来表示当前结构体 `Node` 的类型，即 `MyStruct`。
