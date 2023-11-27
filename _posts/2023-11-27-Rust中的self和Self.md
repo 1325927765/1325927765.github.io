@@ -141,4 +141,4 @@ struct MyStruct {
     next: Option<Box<Self>>,
 }
 ```  
-在这个例子中，`Self::Output` 表示当前 `trait` 实现的类型的相关联类型。实现这个 `trait` 时，可以为 `Output` 指定具体的类型。
+在这个例子中，`Self` 被用来表示当前结构体 `Node` 的类型.
