@@ -135,10 +135,10 @@ impl MyStruct {
 ## 在类型定义中表示当前类型
 在类型定义中，`Self` 用于表示当前类型本身。这可以在 `trait` 定义中用于关联类型（`associated type`）。例如：
 ```rust
-trait MyTrait {
-    type Output;
-
-    fn process(&self) -> Self::Output;
+struct MyStruct {
+    elem: i32,
+    // `Self` 在这里是 `MyStruct`。
+    next: Option<Box<Self>>,
 }
 ```  
 在这个例子中，`Self::Output` 表示当前 `trait` 实现的类型的相关联类型。实现这个 `trait` 时，可以为 `Output` 指定具体的类型。
